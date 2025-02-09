@@ -1,0 +1,29 @@
+.navbar {
+    --bs-navbar-padding-x: 1rem;
+    --bs-navbar-padding-y: 0.1rem;
+}
+
+.navbar-brand {
+    margin-right: 0.75rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+.external-link {
+    text-decoration: none;
+    color: rgb(100, 170, 220);
+}
+
+.external-link:hover {
+    color: rgb(70, 130, 175);
+}
+
+.icon {
+    max-width: 14px;
+    max-height: 14px;
+
+    vertical-align: baseline;
+}
+

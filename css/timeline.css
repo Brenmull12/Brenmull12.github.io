@@ -1,0 +1,108 @@
+.timeline-item > p:first-child {
+    padding-top: 0.075em;
+    margin-bottom: 0;
+}
+
+
+/* GENERAL TIMELINE STYLES */
+/* https://freefrontend.com/bootstrap-timelines/ */
+.timeline {
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    width: 100%
+}
+
+.timeline .timeline-item {
+    position: relative;
+    width: 50%;
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width:575.98px) {
+    .timeline .timeline-item {
+        width: 100%;
+    }
+}
+
+.timeline .timeline-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: .425rem;
+    margin-left: -.5rem;
+    border: .0625rem solid #c8d2de;
+    border-radius: 50%
+}
+
+.timeline .timeline-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -.1875rem;
+    width: .0625rem;
+    margin-top: 1.875rem;
+    margin-left: -.0625rem;
+    background-color: #c8d2de
+}
+
+.timeline .timeline-item:nth-child(2n) {
+    margin-left: 50%;
+    padding-right: 0;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+@media (max-width:575.98px) {
+    .timeline .timeline-item:nth-child(2n) {
+        margin-left: 0;
+    }
+}
+
+.timeline .timeline-item:nth-child(2n+1) {
+    margin-left: 0;
+    padding-right: 1.5rem;
+    padding-left: 0;
+    text-align: right
+}
+
+@media (max-width:575.98px) {
+    .timeline .timeline-item:nth-child(2n+1) {
+        padding-right: 0;
+        padding-left: 1.5rem;
+        text-align: left
+    }
+}
+
+.timeline .timeline-item:nth-child(2n+1):after,
+.timeline .timeline-item:nth-child(2n+1):before {
+    right: 0;
+    left: auto
+}
+
+@media (max-width:575.98px) {
+    .timeline .timeline-item:nth-child(2n+1):after,
+    .timeline .timeline-item:nth-child(2n+1):before {
+        right: auto;
+        left: 0
+    }
+}
+
+.timeline .timeline-item:nth-child(2n+1):before {
+    margin-right: -.5rem
+}
+
+.timeline .timeline-item:nth-child(2n+1):after {
+    margin-right: -.0625rem
+}
+
+.timeline.dark .timeline-item:before {
+    border: .0625rem solid #96a0ad
+}
+
+.timeline.dark .timeline-item:after {
+    background-color: #b7c3d2
+}
