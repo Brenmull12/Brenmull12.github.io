@@ -1,2 +1,8 @@
 # IDE SETTINGS
 /.vscode/
+
+# JEKYLL AND RUBY
+_site
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
