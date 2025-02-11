@@ -75,17 +75,18 @@ description: Brennen Muller's website portfolio.
           </p>
 
           <div>
-            {% if project.github-link %}
-            <a class="external-link" href="{{ project.github-link}}"><img class="icon" src="assets/icons/github-mark-dark.png">
+            {% if project.github %}
+            <a class="external-link" href="{{ project.github}}"><img class="icon" src="assets/icons/github-mark-dark.png">
               GitHub</a>
             {% endif %}
 
-            {% if project.website-link %}
-            <a class="external-link" href="{{ project.website-link }}"><img class="icon" src=""> Website</a>
+            {% if project.website %}
+            <a class="external-link" href="{{ project.website }}"><img class="icon" src=""> Website</a>
             {% endif %}
 
-            <!-- {% if project.pdf %}
-            {% endif %} -->
+            {% if project.pdf %}
+            <a class="external-link" href="{{ project.pdf }}"><img class="icon" src=""> {{ project.pdf-title | default:"PDF"}}</a>
+            {% endif %}
           </div>
         </div>
         {% endfor %}
