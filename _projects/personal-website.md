@@ -6,5 +6,5 @@ description: >-
     Description goes here...
 
 github-link: https://github.com/Brenmull12/Brenmull12.github.io/
-website-link: {{ site.url }}
+website-link: https://brenmull12.github.io/
 ---
