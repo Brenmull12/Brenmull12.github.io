@@ -1,7 +1,7 @@
 # MANDATED BY GITHUB PAGES
 lsi: false
 safe: true
-source: [your repo's top level directory]
+# source: [your repo's top level directory]
 incremental: false
 highlighter: rouge
 gist:
@@ -16,6 +16,7 @@ plugins:
 
 # SITE INFORMATION
 title: Brennen Muller's Website
+author: Brennen Muller
 description: >- 
   Site Description Goes Here
 domain: brenmull12.github.io
