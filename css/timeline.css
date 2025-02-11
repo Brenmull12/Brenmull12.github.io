@@ -42,11 +42,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    bottom: -.1875rem;
-    width: .0625rem;
+    bottom: 0.25rem;
+    /* width: 2px; */
+    /* width: .0625rem; */
     margin-top: 1.875rem;
     margin-left: -.0625rem;
-    background-color: #c8d2de
+    /* background-color: #c8d2de; */
+    border-left: 1px solid #c8d2de;
 }
 
 .timeline .timeline-item:nth-child(2n) {
@@ -93,10 +95,6 @@
 
 .timeline .timeline-item:nth-child(2n+1):before {
     margin-right: -.5rem
-}
-
-.timeline .timeline-item:nth-child(2n+1):after {
-    margin-right: -.0625rem
 }
 
 .timeline.dark .timeline-item:before {
