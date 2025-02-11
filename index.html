@@ -12,7 +12,7 @@ description: Brennen Muller's website portfolio.
 
     {% include opengraph.html %}
     {% include styles.html %}
-    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/timeline.css">
   </head>
 
   <body>
@@ -76,7 +76,7 @@ description: Brennen Muller's website portfolio.
 
           <div>
             {% if project.github-link %}
-            <a class="external-link" href="{{ project.github-link}}"><img class="icon" src="icons/github-mark-dark.png">
+            <a class="external-link" href="{{ project.github-link}}"><img class="icon" src="assets/icons/github-mark-dark.png">
               GitHub</a>
             {% endif %}
 
