@@ -1,6 +1,11 @@
 ---
 layout: base
 css: [timeline.css]
+permalink: /projects/
+
+title: Projects
+description: >-
+    ...
 ---
 
 <header>
@@ -11,9 +16,7 @@ css: [timeline.css]
   <section class="timeline dark">
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for project in projects %}
-      {% if project.categories contains page.name %}
-        {% include timeline-item.html %}
-      {% endif %}
+      {% include timeline-item.html %}
     {% endfor %}
   </section>
 </main>
