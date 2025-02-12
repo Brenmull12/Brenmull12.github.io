@@ -16,7 +16,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarProjectsDropdown">
               {% for category in site.categories %}
-              <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ category.permalink | default: category.url }}">{{ category.name }}</a>
+              <a class="dropdown-item" href="{{ site.baseurl }}{{ category.permalink | default: category.url }}">{{ category.name }}</a>
               {% endfor %}
             </div>
           </div>
