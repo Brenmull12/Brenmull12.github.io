@@ -19,4 +19,15 @@
             default:"PDF"}}</a>
         {% endif %}
     </div>
+
+    <div>
+        {% for skill_name in project.skills %}
+            {% assign skill = site.skills | where: "name", skill_name | first %}
+            {% if skill %}
+            <a class="external-link" href="{{ skill.link }}">{% if skill.icon %}<img class="icon" src=""> {% endif %}{{ skill.name }}</a> 
+            {% else %}
+            {{ skill_name }}
+            {% endif %}
+        {% endfor %}
+    </div>
 </div>
