@@ -31,3 +31,5 @@ collections:
   categories:
     output: true
     permalink: "/projects/:name/"
+  skills:
+    output: false
