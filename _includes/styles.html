@@ -5,6 +5,10 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
+{% for file in layout.css %} 
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ file }}">
+{% endfor %}
+
 {% for file in page.css %} 
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ file }}">
 {% endfor %}
