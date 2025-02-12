@@ -2,11 +2,23 @@
 layout: base
 css: [timeline.css]
 ---
+
 <header>
-  <h1>Projects</h1>
+  <h1>{{ page.name }} Projects</h1>
 </header>
 
-<main>
+<section>
+  <!-- {% for category in site.categories %}
+  <h5>{{ category.name }}</h5> -->
+  {% for project in site.projects %}
+    {% if project.categories contains page.name %}
+      <p>{{ project.title }}</p>
+      {% endif %}
+  {% endfor %}
+  <!-- {% endfor %} -->
+</section>
+
+<!-- <main>
   <section class="timeline dark">
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for project in projects limit:5 %}
@@ -34,4 +46,4 @@ css: [timeline.css]
     </div>
     {% endfor %}
   </section>
-</main>
+</main> -->

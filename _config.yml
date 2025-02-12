@@ -28,3 +28,6 @@ collections:
   projects:
     output: true
     permalink: "/project/:title/"
+  categories:
+    output: true
+    permalink: "/projects/:name/"
