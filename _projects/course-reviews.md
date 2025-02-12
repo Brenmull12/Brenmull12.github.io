@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Course Review Software
-date: 2024-04-01
+date: 2023-12-01
 description: >-
     A course review application designed using JavaFX and SQLite. Created for CS3140: Software Development Essentials. 
 categories: [Software Development]
