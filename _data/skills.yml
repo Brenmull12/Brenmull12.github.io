@@ -5,7 +5,7 @@ python:
 
 jekyll:
   name: Jekyll
-  image: https://github.com/jekyll/brand/blob/master/jekyll-notext-light-transparent.png?raw=true
+  image: /assets/icons/jekyll.png
   link: https://jekyllrb.com/
 
 php:
@@ -36,12 +36,12 @@ tensorflow:
 
 jupyter:
   name: Jupyter
-  image: https://github.com/jupyter/design/blob/main/logos/Logo%20Mark/logomark-orangebody-whitemoons/logomark-orangebody-whitemoons.png?raw=true
+  image: /assets/icons/jupyter.png
   link: https://jupyter.org/
 
 numpy:
   name: NumPy
-  image: https://github.com/numpy/numpy/blob/main/branding/logo/logomark/numpylogoicon.png?raw=true
+  image: /assets/icons/numpy.png
   link: https://numpy.org/
 
 heroku:
@@ -75,7 +75,7 @@ javascript:
 
 java:
   name: Java
-  image: http://cr.openjdk.java.net/~jeff/Duke/png/Hips.png
+  image: https://cr.openjdk.java.net/~jeff/Duke/png/Hips.png
   link: https://www.java.com/
 
 javafx:
@@ -85,5 +85,7 @@ javafx:
 
 sqlite:
   name: SQLite
-  image: https://sqlite.org/images/sqlite370_banner.svg
+  # image: https://sqlite.org/images/sqlite370_banner.svg
+  # image: https://en.vetores.org/d/sqlite.svg
+  image: /assets/icons/sqlite.png
   link: https://sqlite.org/

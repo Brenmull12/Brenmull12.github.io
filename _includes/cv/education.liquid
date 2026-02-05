@@ -18,11 +18,11 @@
 <li class="list-group-item">
   <div class="row">
     <div class="col-sm-4 col-md-3 mb-1">
-      <div class="badge text-bg-{{ status-color }} text-x-small">
+      <div class="badge text-bg-{{ status-color }} text-wrap fs-8 mb-1">
         {{ date-range }}
       </div>
       {% if entry.location %}
-        <div class="text-x-small">
+        <div class="fs-8">
           <span class="bi bi-geo-alt-fill text-{{ status-color }}" aria-label="location icon"></span>
           {{ entry.location }}
         </div>
@@ -30,10 +30,10 @@
     </div>
     <div class="col-sm-8 col-md-9">
       {% if entry.starred %}
-        <span class="bi bi-star-fill float-end my-auto text-warning" aria-label="starred item"></span>
+        <span class="bi bi-star-fill text-warning float-end my-auto" aria-label="starred item"></span>
       {% endif %}
-      <h3 class="text-large">{{ entry.degree }}</h3>
-      <p class="text-small">
+      <h3 class="fs-4">{{ entry.degree }}</h3>
+      <p>
         <span class="text-emphasis">{{ entry.institution }} </span>
         {% if entry.program %}- {{ entry.program }} {% endif %}
         {% if entry.extra %}- {{ entry.extra }} {% endif %}

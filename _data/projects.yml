@@ -131,7 +131,7 @@
       href: https://github.com/cs-3140-fa23/hw6-hw6-sem9bd-ydt5vy-tl3uk
   skills:
     - javafx
-    - Java
+    - java
     - sqlite
   description: >-
     A prototype course review application designed using JavaFX and SQLite.

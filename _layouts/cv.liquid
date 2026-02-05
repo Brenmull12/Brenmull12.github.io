@@ -2,89 +2,88 @@
 layout: default
 ---
 <header>
-    <h1>{{ page.title }}</h1>
-    {% if page.description %}
+  <h1>{{ page.title }}</h1>
+  {% if page.description %}
     <p>{{ page.description }}</p>
-    {% endif %}
+  {% endif %}
 </header>
 
 <div class="row">
-    <div class="col-md-3 col-lg-2 my-3">
-        <nav id="table-of-contents">
-            <h2 class="text-large">Navigation</h2>
-            <ul class="nav navbar-nav">
-                <li><a class="nav-link" href="#experience">Experience</a></li>
-                <li><a class="nav-link" href="#education">Education</a></li>
-                <li><a class="nav-link" href="#certifications">Certifications</a></li>
-                <li><a class="nav-link" href="#awards">Awards</a></li>
-                <li><a class="nav-link" href="#projects">Projects</a></li>
+  <div class="col-md-3 col-lg-2 my-3">
+    <nav id="table-of-contents">
+      <h2 class="fs-4">Sections</h2>
+      <ul class="nav navbar-nav">
+        <li><a class="nav-link fs-7" href="#experience">Experience</a></li>
+        <li><a class="nav-link fs-7" href="#education">Education</a></li>
+        <li><a class="nav-link fs-7" href="#certifications">Certifications</a></li>
+        <li><a class="nav-link fs-7" href="#awards">Awards</a></li>
+        <li><a class="nav-link fs-7" href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="col-md-9 col-lg-10">
+    <section class="card mb-3" id="experience">
+      <div class="card-body">
+        <h2>Experience</h2>
+        <ul class="list-group list-group-flush">
+          {% assign experiences = site.data['curriculum-vitae'].experiences | sort: 'end' | reverse %}
+          {% for entry in experiences %}
+            {% include cv/experience.liquid %}
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
 
-            </ul>
-        </nav>
-    </div>
-    <div class="col-md-9 col-lg-10">
-        <section class="card mb-3" id="experience">
-            <div class="card-body">
-                <h2>Experience</h2>
-                <ul class="list-group list-group-flush">
-                    {% assign experiences = site.data.curriculum-vitae.experiences | sort: 'end' | reverse %}
-                    {% for entry in experiences %}
-                        {% include cv/experience.liquid %}
-                    {% endfor %}
-                </ul>
-            </div>
-        </section>
+    <section class="card mb-3" id="education">
+      <div class="card-body">
+        <h2>Education</h2>
+        <ul class="list-group list-group-flush">
+          {% assign education = site.data['curriculum-vitae'].education | sort: 'end' | reverse %}
+          {% for entry in education %}
+            {% include cv/education.liquid %}
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
 
-        <section class="card mb-3" id="education">
-            <div class="card-body">
-                <h2>Education</h2>
-                <ul class="list-group list-group-flush">
-                    {% assign education = site.data.curriculum-vitae.education | sort: 'end' | reverse %}
-                    {% for entry in education %}
-                        {% include cv/education.liquid%}
-                    {% endfor %}
-                </ul>
-            </div>
-        </section>
+    <section class="card mb-3" id="certifications">
+      <div class="card-body">
+        <h2>Certifications</h2>
+        <ul class="list-group list-group-flush">
+          {% assign certifications = site.data['curriculum-vitae'].certifications | sort: 'issued' | reverse %}
+          {% for entry in certifications %}
+            {% assign current-date = site.time | date: '%Y-%m-%d' %}
+            {% assign expiration = entry.expiration | date: '%y-%m-%d' %}
+            {% if current-date < expiration %}
+              {% include cv/certification.liquid %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
 
-        <section class="card mb-3" id="certifications">
-            <div class="card-body">
-                <h2>Certifications</h2>
-                <ul class="list-group list-group-flush">
-                    {% assign certifications = site.data.curriculum-vitae.certifications | sort: 'issued' | reverse %}
-                    {% for entry in certifications %}
-                        {% assign current-date = site.time | date: '%Y-%m-%d' %}
-                        {% assign expiration = entry.expiration | date: '%y-%m-%d' %}
-                        {% if current-date < expiration %}
-                        {% include cv/certification.liquid %}
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-        </section>
+    <section class="card mb-3" id="awards">
+      <div class="card-body">
+        <h2>Awards</h2>
+        <ul class="list-group list-group-flush">
+          {% assign awards = site.data['curriculum-vitae'].awards | sort: 'date' | reverse %}
+          {% for entry in awards %}
+            {% include cv/award.liquid %}
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
 
-        <section class="card mb-3" id="awards">
-            <div class="card-body">
-                <h2>Awards</h2>
-                <ul class="list-group list-group-flush">
-                    {% assign awards = site.data.curriculum-vitae.awards | sort: 'date' | reverse %}
-                    {% for entry in awards %}
-                    {% include cv/award.liquid %}
-                    {% endfor %}
-                </ul>
-            </div>
-        </section>
-
-        <section class="card mb-3" id="projects">
-            <div class="card-body">
-                <h2>Projects</h2>
-                <ul class="list-group list-group-flush">
-                    {% assign projects = site.data.projects | sort: 'end' | reverse %}
-                    {% for entry in projects %}
-                        {% include cv/project.liquid %}
-                    {% endfor %}
-                </ul>
-            </div>
-        </section>
-    </div>
+    <section class="card mb-3" id="projects">
+      <div class="card-body">
+        <h2>Projects</h2>
+        <ul class="list-group list-group-flush">
+          {% assign projects = site.data.projects | sort: 'end' | reverse %}
+          {% for entry in projects %}
+            {% include cv/project.liquid %}
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+  </div>
 </div>

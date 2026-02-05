@@ -18,11 +18,11 @@
 <li class="list-group-item">
   <div class="row">
     <div class="col-sm-4 col-md-3 mb-1">
-      <div class="badge text-bg-{{ status-color }} text-x-small">
+      <div class="badge text-bg-{{ status-color }} text-wrap fs-8 mb-1">
         {{ date-range }}
       </div>
       {% if entry.location %}
-        <div class="text-x-small">
+        <div class="fs-8">
           <span class="bi bi-geo-alt-fill text-{{ status-color }}" aria-label="location icon"></span>
           {{ entry.location }}
         </div>
@@ -30,13 +30,13 @@
     </div>
     <div class="col-sm-8 col-md-9">
       {% if entry.starred %}
-        <span class="bi bi-star-fill float-end my-auto text-warning" aria-label="starred item"></span>
+        <span class="bi bi-star-fill text-warning float-end my-auto" aria-label="starred item"></span>
       {% endif %}
-      <h3 class="text-large">{{ entry.name }}</h3>
-      <p class="text-small">
-        <span class="text-emphasis">{{ entry.title }} </span> - {{ entry.type }}
+      <h3 class="fs-4">{{ entry.name }}</h3>
+      <p>
+        <span class="text-emphasis">{{ entry.title }}</span> - {{ entry.type }}
       </p>
-      <p class="text-small">
+      <p class="fs-7">
         {% for link in entry.links %}
           <a class="link" href="{{ link.href }}">
             {% if link.class %}
@@ -48,25 +48,25 @@
           </a>
         {% endfor %}
       </p>
-
       {% if entry.description %}
-        <p class="text-small">{{ entry.description }}</p>
-      {% endif %}
-
-      {% if entry.skills %}
-        <p class="text-small">
-          {% for skill-id in entry.skills %}
-            {% assign skill = site.data.skills[skill-id] %}
-            {% if skill.class %}
-              <span class="{{ skill.class }}" aria-hidden="true"></span>
-            {% elsif skill.image %}
-              <img class="icon" src="{{ skill.image }}" alt>
-            {% endif %}
-              {{ skill.name }}&nbsp;&nbsp;
-          {% endfor %}
-        </p>
+        <p>{{ entry.description }}</p>
       {% endif %}
       </p>
     </div>
   </div>
+  {% if entry.skills %}
+    <div class="d-flex flex-row flex-wrap justify-content-center my-1">
+      {% for skill-id in entry.skills %}
+        {% assign skill = site.data.skills[skill-id] %}
+        <div class="bg-dark-subtle border border-dark-subtle rounded-3 fs-5 py-1 px-2 mx-2">
+          {% if skill.class %}
+            <span class="{{ skill.class }}" aria-hidden="true"></span>
+          {% elsif skill.image %}
+            <img class="icon" src="{{ skill.image }}" alt>
+          {% endif %}
+          {{ skill.name }}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
 </li>
