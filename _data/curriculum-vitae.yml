@@ -1,0 +1,152 @@
+title: Software Engineer I
+location: Boulder, CO
+summary: ...
+
+education:
+  - institution: Boulder High School
+    degree: Diploma
+    location: Boulder, CO
+    start: 2018-08-01
+    end: 2022-05-01
+
+  - institution: University of Virginia
+    degree: B.S. Computer Science
+    extra: French Minor
+    location: Charlottesville, VA
+    start: 2022-08-01
+    end: Present # 2026-05-01
+    starred: true
+
+experiences:
+  - title: Team Member
+    company: City of Boulder
+    department: Open Space and Mountain Parks
+    program: Junior Ranger Program
+    type: Seasonal
+    location: Boulder, CO
+    start: 2019-06-01
+    end: 2019-06-01
+
+  - title: Team Member
+    company: City of Boulder
+    department: Open Space and Mountain Parks
+    program: Junior Ranger Program
+    type: Seasonal
+    location: Boulder, CO
+    start: 2021-07-01
+    end: 2021-07-01
+
+  - title: Cook
+    company: Noodles & Company
+    type: Part-Time
+    location: Boulder, CO
+    start: 2022-05-01
+    end: 2022-08-01
+
+  - title: Team Leader
+    company: City of Boulder
+    department: Open Space and Mountain Parks
+    program: Junior Ranger Program
+    type: Seasonal
+    location: Boulder, CO
+    start: 2023-05-01
+    end: 2023-08-01
+
+  - title: Team Leader
+    company: City of Boulder
+    department: Open Space and Mountain Parks
+    program: Junior Ranger Program
+    type: Seasonal
+    location: Boulder, CO
+    start: 2024-05-01
+    end: 2024-08-01
+
+  - title: Website Manager
+    company: University of Virginia
+    department: Brown College at Monroe Hill
+    type: Part-Time
+    location: Charlottesville, VA
+    start: 2024-05-01
+    end: 2025-05-01
+
+  - title: Teaching Assistant
+    company: University of Virginia
+    department: Computer Science
+    course: Discrete Mathematics & Theory 1
+    type: Part-Time
+    location: Charlottesville, VA
+    start: 2024-01-01
+    end: 2025-05-01
+
+  - title: Teaching Assistant
+    company: University of Virginia
+    department: Computer Science
+    course: Discrete Mathematics & Theory 2
+    type: Part-Time
+    location: Charlottesville, VA
+    start: 2025-08-01
+    end: Present # 2026-05-01
+
+  - title: Teaching Assistant
+    company: University of Virginia
+    department: Computer Science
+    course: Advanced Data Structure & Algorithms
+    type: Part-Time
+    location: Charlottesville, VA
+    start: 2026-01-01
+    end: Present # 2026-05-01
+
+  - title: Engineering Intern
+    company: Emerson
+    department: Workforce Productivity (IT)
+    type: Full-Time
+    location: Boulder, CO
+    start: 2025-05-01
+    end: 2025-08-01
+    starred: true
+
+  # - title: Software Engineer I
+  #   company: Emerson
+  #   department: Workforce Productivity (IT)
+  #   type: Full-Time
+  #   location: Boulder, CO
+  #   start: 2026-07-01
+  #   end: Present
+  #   starred: true
+
+awards:
+  - name: Helpful Hacker & Mutant Coding Machine
+    issuer: Boulder High School
+    # location: Boulder, CO
+    date: 2022-05-01
+
+  # - name: Balanced Man Scholarship Finalist
+  #   issuer: Sigma Phi Epsilon
+  #   location: Charlottesville, VA
+  #   date: 2023-11-01
+
+  - name: Best Cochairship
+    issuer: Brown Residential College
+    # location: Charlottesville, VA
+    date: 2024-04-01
+
+certifications:
+  - name: CPR & AED
+    issuer: American Red Cross
+    # location: N/A
+    issued: 2023-05-01
+    expiration: 2026-05-01
+
+  - name: Wilderness/Remote Location First Aid
+    issuer: American Red Cross
+    # location: N/A
+    issued: 2023-05-01
+    expiration: 2026-05-01
+
+  - name: QPR Gatekeeper Training
+    issuer: QPR Institute
+    # location: N/A
+    issued: 2023-05-01
+    expiration: 2026-05-01
+
+volunteering:

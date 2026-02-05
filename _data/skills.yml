@@ -1,0 +1,89 @@
+python:
+  name: Python
+  # class: fa-brands fa-python
+  image: https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png
+
+jekyll:
+  name: Jekyll
+  image: https://github.com/jekyll/brand/blob/master/jekyll-notext-light-transparent.png?raw=true
+  link: https://jekyllrb.com/
+
+php:
+  name: PHP
+  # class: fa-brands fa-php
+  image: https://www.php.net/images/logos/new-php-logo.png
+  link: https://www.php.net/
+
+postgres:
+  name: PostgreSQL
+  image: https://www.postgresql.org/media/img/about/press/elephant.png
+  link: https://www.postgresql.org/
+
+c++:
+  name: C++
+  image: https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg
+  link: https://isocpp.org/
+
+github:
+  name: GitHub
+  class: bi bi-github
+  link: https://github.com/
+
+tensorflow:
+  name: TensorFlow
+  image: /assets/icons/tensorflow.png
+  link: https://www.tensorflow.org/
+
+jupyter:
+  name: Jupyter
+  image: https://github.com/jupyter/design/blob/main/logos/Logo%20Mark/logomark-orangebody-whitemoons/logomark-orangebody-whitemoons.png?raw=true
+  link: https://jupyter.org/
+
+numpy:
+  name: NumPy
+  image: https://github.com/numpy/numpy/blob/main/branding/logo/logomark/numpylogoicon.png?raw=true
+  link: https://numpy.org/
+
+heroku:
+  name: Heroku
+  image: /assets/icons/heroku.png
+  link: https://www.heroku.com/
+
+django:
+  name: Django
+  image: https://static.djangoproject.com/img/logos/django-logo-negative.png
+  link: https://www.djangoproject.com/
+
+bootstrap:
+  name: Bootstrap
+  image: https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg
+  link: https://getbootstrap.com/
+
+audition:
+  name: Adobe Audition
+  class: bi bi-mic
+  link: https://www.adobe.com/products/audition.html
+
+drupal:
+  name: Drupal
+  class: bi bi-code-slash
+  link: https://drupal.org/home
+
+javascript:
+  name: JavaScript
+  image: https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png
+
+java:
+  name: Java
+  image: http://cr.openjdk.java.net/~jeff/Duke/png/Hips.png
+  link: https://www.java.com/
+
+javafx:
+  name: JavaFX
+  class: bi bi-code-slash
+  link: https://openjfx.io/
+
+sqlite:
+  name: SQLite
+  image: https://sqlite.org/images/sqlite370_banner.svg
+  link: https://sqlite.org/

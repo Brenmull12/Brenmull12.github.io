@@ -1,37 +1,10 @@
 ---
-layout: base
-css: [timeline.css]
+layout: default
+css: []
+transparent-header: true
+background-image: https://wallpapers.com/images/hd/pure-black-background-y8wp2r83b15xxdi6.jpg
 
-title: Home
-description: Brennen Muller's website portfolio.
+permalink: /
+title: Brennen Muller
+description: Brennen Muller's homepage
 ---
-
-<header>
-  <h1>Brennen Muller</h1>
-  <h2>Web Developer</h2>
-</header>
-
-<main>
-  <section>
-    <h2>Skills / Experience</h2>
-    ...
-  </section>
-
-  <section class="timeline dark">
-    {% assign projects = site.projects | sort: 'date' | reverse %}
-    {% for project in projects limit:5 %}
-      {% include timeline-item.html %}
-    {% endfor %}
-  </section>
-
-  <section>
-    Contact
-  </section>
-
-</main>
-
-<footer>
-  <small>
-    &copy; 2025 Brennen Muller
-  </small>
-</footer>

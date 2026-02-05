@@ -1,0 +1,72 @@
+{% capture status-color %}{% if entry.end == 'Present' %}success{% else %}info{% endif %}{% endcapture %}
+{% capture date-range %}
+    {% assign start-year = entry.start | date: '%Y' %}
+    {% assign start-month = entry.start | date: '%b' %}
+    {% assign end-year = entry.end | date: '%Y' %}
+    {% assign end-month = entry.end | date: '%b' %}
+    {% if entry.end == "Present" %}
+        Since {{ start-month }} {{ start-year }}
+    {% elsif start-month == end-month and start-year == end-year %}
+        {{ end-month }} {{ end-year }}
+    {% elsif start-year == end-year %}
+        {{ start-month }} - {{ end-month }} {{ end-year }}
+    {% else %}
+        {{ start-month }} {{ start-year }} - {{ end-month }} {{ end-year }}
+    {% endif %}
+{% endcapture %}
+
+<li class="list-group-item">
+  <div class="row">
+    <div class="col-sm-4 col-md-3 mb-1">
+      <div class="badge text-bg-{{ status-color }} text-x-small">
+        {{ date-range }}
+      </div>
+      {% if entry.location %}
+        <div class="text-x-small">
+          <span class="bi bi-geo-alt-fill text-{{ status-color }}" aria-label="location icon"></span>
+          {{ entry.location }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="col-sm-8 col-md-9">
+      {% if entry.starred %}
+        <span class="bi bi-star-fill float-end my-auto text-warning" aria-label="starred item"></span>
+      {% endif %}
+      <h3 class="text-large">{{ entry.name }}</h3>
+      <p class="text-small">
+        <span class="text-emphasis">{{ entry.title }} </span> - {{ entry.type }}
+      </p>
+      <p class="text-small">
+        {% for link in entry.links %}
+          <a class="link" href="{{ link.href }}">
+            {% if link.class %}
+              <span class="{{ link.class }}" aria-hidden="true"></span>
+            {% elsif link.image %}
+              <img src="{{ link.image }}" alt>
+            {% endif %}
+            {{ link.name }}
+          </a>
+        {% endfor %}
+      </p>
+
+      {% if entry.description %}
+        <p class="text-small">{{ entry.description }}</p>
+      {% endif %}
+
+      {% if entry.skills %}
+        <p class="text-small">
+          {% for skill-id in entry.skills %}
+            {% assign skill = site.data.skills[skill-id] %}
+            {% if skill.class %}
+              <span class="{{ skill.class }}" aria-hidden="true"></span>
+            {% elsif skill.image %}
+              <img class="icon" src="{{ skill.image }}" alt>
+            {% endif %}
+              {{ skill.name }}&nbsp;&nbsp;
+          {% endfor %}
+        </p>
+      {% endif %}
+      </p>
+    </div>
+  </div>
+</li>

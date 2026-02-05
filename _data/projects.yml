@@ -1,0 +1,204 @@
+- name: Personal Website
+  title: Solo Contributor
+  type: Personal Project
+  # location: N/A
+  start: 2025-02-09
+  end: Present
+  starred: true
+  links:
+    - name: Website
+      class: bi bi-globe2
+      href: https://brenmull12.github.io/
+    - name: GitHub
+      class: bi bi-github
+      href: https://github.com/Brenmull12/Brenmull12.github.io
+  skills:
+    - jekyll
+    - github
+  description: >-
+    My personal website, hosted by GitHub Pages.
+
+- name: ML4UVA Flight Delay Analysis
+  title: Contributor
+  type: Class Project
+  location: Charlottesville, VA
+  start: 2024-10-01
+  end: 2024-12-12
+  links:
+  - name: Website
+    class: bi bi-globe2
+    href: https://nrichnguyen.wixsite.com/ml4va
+  - name: GitHub
+    class: bi bi-github
+    href: https://github.com/Brenmull12/ML4UVA-Flight-Delay-Analysis
+  - name: Report
+    class: bi bi-filetype-pdf
+    href: /assets/files/ML4VA Flight Delay Analysis - Final Report.pdf
+  skills:
+    - tensorflow
+    - jupyter
+    - numpy
+    - python
+  description: >-
+    A comparison of several machine learning models trained to predict aircraft takeoff delay based on weather conditions, airline carrier, and aircraft model.
+    The methods tested include standard regression models, decision trees, and pre-categorization models.
+
+- name: UVA Lost and Found
+  title: Scrum Master, Contributor
+  type: Class Project
+  location: Charlottesville, VA
+  start: 2024-01-01
+  end: 2024-04-30
+  starred: true
+  links:
+    - name: GitHub
+      class: bi bi-github
+      href: https://github.com/Brenmull12/UVA-Lost-and-Found-Archive
+  skills:
+    - django
+    - heroku
+    - postgres
+    - sqlite
+    - bootstrap
+    - python
+  description: >-
+    A moderated forum for University of Virginia students to find and report lost items.
+    Created using Django, PostgreSQL, and Heroku for CS3240: Software Engineering.
+
+- name: Spontaneous Discord Bot
+  title: Solo Contributor
+  type: Personal Project
+  start: 2023-03-14
+  end: 2023-03-15
+  links:
+    - name: GitHub
+      class: bi bi-github
+      href: https://github.com/Brenmull12/Spontaneous-Bot
+  skills:
+    - javascript
+  description: >-
+    A Discord bot that pins any messages whose reactions exceed a certain threshold.
+
+- name: Recipe Tracker
+  title: Contributor
+  type: Hackathon
+  location: Charlottesville, VA
+  start: 2023-03-25
+  end: 2023-03-26
+  links:
+    - name: GitHub
+      class: bi bi-github
+      href: https://github.com/TI-Allard/hoohacks23
+  skills:
+    - django
+    - postgres
+    - sqlite
+  description: >-
+    A recipe management application designed using Django and PostgreSQL.
+    Created for HooHacks 2023.
+
+- name: Sister Revolutions
+  title: Assistant Producer
+  type: Research Project
+  location: Charlottesville, VA
+  start: 2024-01-01
+  end: 2024-04-15
+  starred: true
+  links:
+    - name: Website
+      class: bi bi-globe2
+      href: https://browncollege.virginia.edu/sister-revolutions
+    - name: Linktree
+      class: bi bi-link-45deg
+      href: https://linktr.ee/sisterrevolutions
+    - name: Spotify
+      class: bi bi-spotify
+      href: https://open.spotify.com/show/3CdSoUaJZAznCLekPRjFl3
+  skills:
+    - audition
+  description: >-
+    A four-part comparative history podcast produced by Brown Residential College to compare the revolutionary legacies of Charlottesville, VA and Besançon, France.
+
+- name: UVA Course Reviewer
+  title: Contributor
+  type: Class Project
+  location: Charlottesville, VA
+  start: 2023-11-20
+  end: 2023-12-05
+  links:
+    - name: GitHub
+      class: bi bi-github
+      href: https://github.com/cs-3140-fa23/hw6-hw6-sem9bd-ydt5vy-tl3uk
+  skills:
+    - javafx
+    - Java
+    - sqlite
+  description: >-
+    A prototype course review application designed using JavaFX and SQLite.
+    Created for CS3140: Software Development Essentials.
+
+- name: Aho Corasick Algorithm Teaching Materials
+  title: Contributor
+  type: Class Project
+  location: Charlottesville, VA
+  start: 2025-03-19
+  end: 2025-04-03
+  links:
+    - name: GitHub
+      class: bi bi-github
+      href: https://github.com/Brenmull12/Aho-Corasick-Project/
+  skills:
+    - c++
+    - java
+    - python
+  description: >-
+    Instructional materials the Aho-Corasick Algorithm, including presentations, implementations, test cases and one programming assignment.
+
+- name: D&D Encounger Generator and Monster Creator
+  title: Contributor
+  type: Class Project
+  location: Charlottesville, VA
+  start: 2025-02-17
+  end: 2025-04-23
+  links:
+    - name: GitHub
+      class: bi bi-github
+      href: https://github.com/Tomitrle/dnd-generator-and-creator
+  skills:
+    - php
+    - postgres
+    - javascript
+  description: >-
+    An encounter generator and monster creation form for Dungeons & Dragons.
+    Created using PHP and PostgreSQL for CS 4640: Programming Languages for Web Applications.
+
+- name: Content Update for the Brown College Website
+  title: Content Editor
+  type: Volunteer Project (Self-Motivated)
+  location: Charlottesville, VA
+  start: 2023-06-01
+  end: 2023-09-01
+  links:
+    - name: Website
+      class: bi bi-globe2
+      href: https://browncollege.virginia.edu/
+    - name: Image
+      class: bi bi-image
+      href: /assets/images/Brown College Map.jpg
+  skills:
+    - drupal
+  description: >-
+    Content updates to reflect staff and programming changes at Brown Residential College, primarily for the internal Intranet site.
+
+# - name: MedLama AI Health Assistant
+#   title: Contributor
+#   type: Hackathon
+#   location: Charlottesville, VA
+#   start: 2025-03-29
+#   end: 2025-03-30
+#   links:
+#     - name: GitHub
+#       class: bi bi-github
+#       href: https://github.com/Brenmull12/Hoohacks2025
+#   skills:
+#     - flask

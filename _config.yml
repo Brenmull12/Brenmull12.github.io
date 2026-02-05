@@ -1,35 +1,8 @@
-# MANDATED BY GITHUB PAGES
-lsi: false
-safe: true
-# source: [your repo's top level directory]
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-
-# PLUGINS
-plugins:
-  - jekyll-feed
-
 # SITE INFORMATION
 title: Brennen Muller's Website
 author: Brennen Muller
-description: >- 
+description: >-
   Site Description Goes Here
 domain: brenmull12.github.io
 url: "https://brenmull12.github.io/"
 baseurl: ""
-
-# COLLECTIONS
-collections:
-  projects:
-    output: true
-    permalink: "/project/:title/"
-  categories:
-    output: true
-    permalink: "/projects/:name/"
-  skills:
-    output: false

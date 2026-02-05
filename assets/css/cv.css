@@ -1,0 +1,12 @@
+#table-of-contents .nav-link {
+    --bs-nav-link-padding-y: 0.1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    padding-left: 0.5rem;
+    font-size: small;
+    color: var(--color-default)
+}
+
+#table-of-contents .nav-link:hover {
+    border-left: 1px solid var(--color-info);
+}

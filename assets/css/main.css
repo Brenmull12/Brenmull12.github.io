@@ -1,33 +1,105 @@
-.navbar {
-    --bs-navbar-padding-x: 1rem;
-    --bs-navbar-padding-y: 0.1rem;
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Medium.ttf);
+    font-weight: normal;
 }
 
-.navbar-brand {
-    margin-right: 0.75rem;
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Light.ttf);
+    font-weight: lighter;
+}
+
+:root {
+    --color-info: #0dcaf0;
+    --color-default: #ced4da;
+    --color-emphasis: #f8f9fa;
+}
+
+body {
+    font-family: "Quicksand", "Segoe UI";
+    color: var(--color-default);
+}
+
+header {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-emphasis);
 }
 
 p {
     margin-bottom: 0.5rem;
 }
 
-.external-link {
+.absolute {
+    position: absolute;
+}
+
+.text-emphasis {
+    color: var(--color-emphasis);
+}
+
+.text-x-large {
+    font-size: x-large;
+}
+
+.text-large {
+    font-size: large;
+}
+
+.text-medium {
+    font-size: medium;
+}
+
+.text-small {
+    font-size: small;
+}
+
+.text-x-small {
+    font-size: x-small;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.nav-link {
+    font-size: large;
+}
+
+.list-group-item {
+    color: var(--color-default);
+}
+
+.link {
     text-decoration: none;
     color: rgb(100, 170, 220);
+    margin-left: 0.25em;
+    margin-right: 0.25em;
 }
 
-.external-link + .external-link {
-    margin-left: 5px;
-}
-
-.external-link:hover {
+.link:hover {
     color: rgb(70, 130, 175);
 }
 
 .icon {
-    max-width: 14px;
-    max-height: 14px;
-
-    vertical-align: baseline;
+    height: 1em;
+    width: auto;
+    vertical-align: -0.125em;
 }
-
