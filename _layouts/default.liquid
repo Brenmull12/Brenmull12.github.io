@@ -1,14 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
-  <head>
-    <title>{{ page.title }}</title>
-    <meta name="author" content="{{ page.author | default: site.author }}">
-    <meta name="description" content="{{ page.description }}">
-
-    {% include opengraph.liquid %}
-    {% include styles.liquid %}
-  </head>
-
+  {% include head.liquid %}
   <body class="bg-dark-subtle">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -21,6 +13,12 @@
     {% if page['background-image'] %}
       <img src="{{ page.background-image }}" class="w-100" alt>
     {% endif %}
+
+    <noscript>
+      <div class="alert alert-warning" role="alert">
+        Warning: scripts have been disabled. Unexpected issues may occur.
+      </div>
+    </noscript>
 
     <main class="container">
       {{ content }}
