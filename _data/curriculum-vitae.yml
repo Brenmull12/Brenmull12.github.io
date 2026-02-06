@@ -1,6 +1,8 @@
 name: Brennen Muller
 title: Software Engineer
-summary: ...
+summary: >-
+  Undergraduate student at the University of Virginia studying Computer Science and French.
+  Native of Boulder, Colorado.
 
 education:
   - institution: Boulder High School
@@ -145,19 +147,16 @@ awards:
 certifications:
   - name: CPR & AED
     issuer: American Red Cross
-    # location: N/A
     issued: 2023-05-01
     expiration: 2026-05-01
 
   - name: Wilderness/Remote Location First Aid
     issuer: American Red Cross
-    # location: N/A
     issued: 2023-05-01
     expiration: 2026-05-01
 
   - name: QPR Gatekeeper Training
     issuer: QPR Institute
-    # location: N/A
     issued: 2023-05-01
     expiration: 2026-05-01
 

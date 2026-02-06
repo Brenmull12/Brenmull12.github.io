@@ -146,3 +146,23 @@ flask:
   name: Flask
   class: bi bi-flask
   link: https://flask.palletsprojects.com/en/stable/
+
+kubernetes:
+  name: Kubernetes
+  image: /assets/icons/kubernetes.png
+  link: https://kubernetes.io/
+
+docker:
+  name: Docker
+  image: /assets/icons/docker.png
+  link: https://www.docker.com/
+
+mongo:
+  name: MongoDB
+  image: /assets/icons/mongo.png
+  link: https://www.mongodb.com/
+
+httpd:
+  name: Apache HTTP Server
+  image: /assets/icons/httpd.png
+  link: https://httpd.apache.org/
