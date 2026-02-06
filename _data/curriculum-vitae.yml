@@ -16,7 +16,7 @@ education:
     extra: French Minor
     location: Charlottesville, VA
     start: 2022-08-01
-    end: Present # 2026-05-01
+    end: 2026-05-17
     starred: true
 
 experiences:
@@ -91,7 +91,7 @@ experiences:
     type: Part-Time
     location: Charlottesville, VA
     start: 2025-08-01
-    end: Present # 2026-05-01
+    end: 2026-05-10
 
   - title: Teaching Assistant
     company: University of Virginia
@@ -100,7 +100,7 @@ experiences:
     type: Part-Time
     location: Charlottesville, VA
     start: 2026-01-01
-    end: Present # 2026-05-01
+    end: 2026-05-10
     skills:
       - python
       - java
@@ -125,7 +125,7 @@ experiences:
   #   type: Full-Time
   #   location: Boulder, CO
   #   start: 2026-07-01
-  #   end: Present
+  #   end: 9999-01-01
   #   starred: true
 
 awards:

@@ -1,18 +1,22 @@
-{% capture status-color %}{% if entry.end == 'Present' %}success{% else %}info{% endif %}{% endcapture %}
+{% assign now = site.time | date: '%s' %}
+{% assign end = entry.end | date: '%s' %}
+{% capture status-color %}{% if end > now %}success{% else %}info{% endif %}{% endcapture %}
+
 {% capture date-range %}
-    {% assign start-year = entry.start | date: '%Y' %}
-    {% assign start-month = entry.start | date: '%b' %}
-    {% assign end-year = entry.end | date: '%Y' %}
-    {% assign end-month = entry.end | date: '%b' %}
-    {% if entry.end == "Present" %}
-        Since {{ start-month }} {{ start-year }}
-    {% elsif start-month == end-month and start-year == end-year %}
-        {{ end-month }} {{ end-year }}
-    {% elsif start-year == end-year %}
-        {{ start-month }} - {{ end-month }} {{ end-year }}
-    {% else %}
-        {{ start-month }} {{ start-year }} - {{ end-month }} {{ end-year }}
-    {% endif %}
+  {% assign start-year = entry.start | date: '%Y' %}
+  {% assign start-month = entry.start | date: '%b' %}
+  {% assign end-year = entry.end | date: '%Y' %}
+  {% assign end-month = entry.end | date: '%b' %}
+
+  {% if end > now %}
+    Since {{ start-month }} {{ start-year }}
+  {% elsif start-month == end-month and start-year == end-year %}
+    {{ end-month }} {{ end-year }}
+  {% elsif start-year == end-year %}
+    {{ start-month }} - {{ end-month }} {{ end-year }}
+  {% else %}
+    {{ start-month }} {{ start-year }} - {{ end-month }} {{ end-year }}
+  {% endif %}
 {% endcapture %}
 
 <li class="list-group-item">
@@ -51,7 +55,6 @@
       {% if entry.description %}
         <p>{{ entry.description }}</p>
       {% endif %}
-      </p>
       {% if entry.skills %}
         {% assign skills = entry.skills %}
         {% include cv/skills.liquid %}
