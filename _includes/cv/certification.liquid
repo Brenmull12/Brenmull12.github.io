@@ -23,6 +23,10 @@
       {% if entry.description %}
         <p>{{ entry.description }}</p>
       {% endif %}
+      {% if entry.skills %}
+        {% assign skills = entry.skills %}
+        {% include cv/skills.liquid %}
+      {% endif %}
     </div>
   </div>
 </li>

@@ -36,9 +36,7 @@
     href: /assets/files/ML4VA Flight Delay Analysis - Final Report.pdf
   skills:
     - tensorflow
-    - jupyter
-    - numpy
-    - python
+    - pandas
   description: >-
     A comparison of several machine learning models trained to predict aircraft takeoff delay based on weather conditions, airline carrier, and aircraft model.
     The methods tested include standard regression models, decision trees, and pre-categorization models.
@@ -56,11 +54,7 @@
       href: https://github.com/Brenmull12/UVA-Lost-and-Found-Archive
   skills:
     - django
-    - heroku
     - postgres
-    - sqlite
-    - bootstrap
-    - python
   description: >-
     A moderated forum for University of Virginia students to find and report lost items.
     Created using Django, PostgreSQL, and Heroku for CS3240: Software Engineering.
@@ -92,7 +86,6 @@
   skills:
     - django
     - postgres
-    - sqlite
   description: >-
     A recipe management application designed using Django and PostgreSQL.
     Created for HooHacks 2023.
@@ -130,8 +123,8 @@
       class: bi bi-github
       href: https://github.com/cs-3140-fa23/hw6-hw6-sem9bd-ydt5vy-tl3uk
   skills:
-    - javafx
     - java
+    - javafx
     - sqlite
   description: >-
     A prototype course review application designed using JavaFX and SQLite.
@@ -148,9 +141,9 @@
       class: bi bi-github
       href: https://github.com/Brenmull12/Aho-Corasick-Project/
   skills:
-    - c++
-    - java
     - python
+    - java
+    - c++
   description: >-
     Instructional materials the Aho-Corasick Algorithm, including presentations, implementations, test cases and one programming assignment.
 
@@ -166,8 +159,8 @@
       href: https://github.com/Tomitrle/dnd-generator-and-creator
   skills:
     - php
-    - postgres
     - javascript
+    - postgres
   description: >-
     An encounter generator and monster creation form for Dungeons & Dragons.
     Created using PHP and PostgreSQL for CS 4640: Programming Languages for Web Applications.

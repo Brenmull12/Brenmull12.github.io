@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<hgroup>
+<hgroup id="overview">
   <h1>{{ site.data['curriculum-vitae'].name }}</h1>
   {% if site.data['curriculum-vitae'].title %}
     <p class="fs-3">{{ site.data['curriculum-vitae'].title }}</p>
@@ -16,11 +16,13 @@ layout: default
     <nav id="table-of-contents">
       <h2 class="fs-4">Sections</h2>
       <menu class="nav navbar-nav">
+        <li><a class="nav-link fs-7" href="#overview">Overview</a></li>
         <li><a class="nav-link fs-7" href="#experience">Experience</a></li>
         <li><a class="nav-link fs-7" href="#education">Education</a></li>
+        <li><a class="nav-link fs-7" href="#projects">Projects</a></li>
         <li><a class="nav-link fs-7" href="#certifications">Certifications</a></li>
         <li><a class="nav-link fs-7" href="#awards">Awards</a></li>
-        <li><a class="nav-link fs-7" href="#projects">Projects</a></li>
+        <li><a class="nav-link fs-7" href="#skills">Skills</a></li>
       </menu>
     </nav>
   </div>
@@ -44,6 +46,18 @@ layout: default
           {% assign education = site.data['curriculum-vitae'].education | sort: 'end' | reverse %}
           {% for entry in education %}
             {% include cv/education.liquid %}
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section class="card mb-3" id="projects">
+      <div class="card-body">
+        <h2>Projects</h2>
+        <ul class="list-group list-group-flush">
+          {% assign projects = site.data.projects | sort: 'end' | reverse %}
+          {% for entry in projects %}
+            {% include cv/project.liquid %}
           {% endfor %}
         </ul>
       </div>
@@ -77,15 +91,22 @@ layout: default
       </div>
     </section>
 
-    <section class="card mb-3" id="projects">
+    <section class="card mb-3" id="skills">
       <div class="card-body">
-        <h2>Projects</h2>
-        <ul class="list-group list-group-flush">
-          {% assign projects = site.data.projects | sort: 'end' | reverse %}
-          {% for entry in projects %}
-            {% include cv/project.liquid %}
+        <h2>Skills</h2>
+        <div class="d-flex flex-row flex-wrap my-1">
+          {% for pair in site.data.skills %}
+            {% assign skill = pair[1] %}
+            <div class="bg-dark-subtle border border-dark-subtle rounded-3 py-1 px-2 me-2">
+              {% if skill.class %}
+                <span class="{{ skill.class }}" aria-hidden="true"></span>
+              {% elsif skill.image %}
+                <img class="icon" src="{{ skill.image }}" alt>
+              {% endif %}
+              &nbsp;{{ skill.name }}
+            </div>
           {% endfor %}
-        </ul>
+        </div>
       </div>
     </section>
   </div>

@@ -52,21 +52,10 @@
         <p>{{ entry.description }}</p>
       {% endif %}
       </p>
+      {% if entry.skills %}
+        {% assign skills = entry.skills %}
+        {% include cv/skills.liquid %}
+      {% endif %}
     </div>
   </div>
-  {% if entry.skills %}
-    <div class="d-flex flex-row flex-wrap justify-content-center my-1">
-      {% for skill-id in entry.skills %}
-        {% assign skill = site.data.skills[skill-id] %}
-        <div class="bg-dark-subtle border border-dark-subtle rounded-3 fs-5 py-1 px-2 mx-2">
-          {% if skill.class %}
-            <span class="{{ skill.class }}" aria-hidden="true"></span>
-          {% elsif skill.image %}
-            <img class="icon" src="{{ skill.image }}" alt>
-          {% endif %}
-          {{ skill.name }}
-        </div>
-      {% endfor %}
-    </div>
-  {% endif %}
 </li>

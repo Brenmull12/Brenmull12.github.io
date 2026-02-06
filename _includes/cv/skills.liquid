@@ -1,0 +1,13 @@
+<div class="d-flex flex-row flex-wrap my-1">
+  {% for id in skills %}
+    {% assign skill = site.data.skills[id] %}
+    <div class="bg-dark-subtle border border-dark-subtle rounded-3 py-1 px-2 me-2">
+      {% if skill.class %}
+        <span class="{{ skill.class }}" aria-hidden="true"></span>
+      {% elsif skill.image %}
+        <img class="icon" src="{{ skill.image }}" alt>
+      {% endif %}
+      &nbsp;{{ skill.name }}
+    </div>
+  {% endfor %}
+</div>

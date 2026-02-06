@@ -68,6 +68,8 @@ experiences:
     location: Charlottesville, VA
     start: 2024-05-01
     end: 2025-05-01
+    skills:
+      - drupal
 
   - title: Teaching Assistant
     company: University of Virginia
@@ -77,6 +79,8 @@ experiences:
     location: Charlottesville, VA
     start: 2024-01-01
     end: 2025-05-01
+    skills:
+      - latex
 
   - title: Teaching Assistant
     company: University of Virginia
@@ -95,6 +99,10 @@ experiences:
     location: Charlottesville, VA
     start: 2026-01-01
     end: Present # 2026-05-01
+    skills:
+      - python
+      - java
+      - c++
 
   - title: Engineering Intern
     company: Emerson
@@ -104,6 +112,10 @@ experiences:
     start: 2025-05-01
     end: 2025-08-01
     starred: true
+    skills:
+      - azure
+      - django
+      - oracle
 
   # - title: Software Engineer I
   #   company: Emerson
