@@ -103,6 +103,9 @@
     - name: Website
       class: bi bi-globe2
       href: https://browncollege.virginia.edu/sister-revolutions
+    - name: News
+      class: bi bi-newspaper
+      href: https://www.cavalierdaily.com/article/2024/04/podcast-revolutionizes-storytelling-for-charlottesville-and-its-sister-city
     - name: Linktree
       class: bi bi-link-45deg
       href: https://linktr.ee/sisterrevolutions
