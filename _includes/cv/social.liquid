@@ -1,0 +1,11 @@
+<a class="link text-center mx-2" href="{{ social.link }}">
+  {% if social.class %}
+    <span class="fs-2 {{ social.class }}" aria-hidden="true"></span>
+  {% elsif social.image %}
+    <span class="fs-2"><img class="icon" src="{{ social.image }}" alt></span>
+  {% endif %}
+  <br>
+  <p class="fs-8">
+    {{ social.name }}
+  </p>
+</a>

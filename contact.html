@@ -1,0 +1,17 @@
+---
+layout: default
+css: []
+
+permalink: /contact/
+title: Contact
+description: Contact information
+---
+
+<h1>Contact</h1>
+
+<div class="d-flex justify-content-center">
+{% assign socials = site.data['socials'] %}
+{% for social in socials %}
+{% include cv/social.liquid %}
+{% endfor %}
+</div>

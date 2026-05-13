@@ -1,11 +1,19 @@
 - name: GitHub
+  class: bi bi-github
   link: https://github.com/Brenmull12/
   username: Brenmull12
 
 - name: LinkedIn
+  class: bi bi-linkedin
   link: https://www.linkedin.com/in/brennen-muller-5a2621289/
   username: Brennen Muller
 
-- name: email
+- name: Personal
+  class: bi bi-envelope-at
   link: mailto:mullerbrennen@gmail.com
   username: mullerbrennen@gmail.com
+
+# - name: Work
+#   class: bi bi-envelope-at
+#   link: mailto:@emerson.com
+#   username: @emerson.com
