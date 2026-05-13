@@ -91,7 +91,7 @@ experiences:
     type: Part-Time
     location: Charlottesville, VA
     start: 2025-08-01
-    end: 2026-05-10
+    end: 2026-05-08
 
   - title: Teaching Assistant
     company: University of Virginia
@@ -100,7 +100,7 @@ experiences:
     type: Part-Time
     location: Charlottesville, VA
     start: 2026-01-01
-    end: 2026-05-10
+    end: 2026-05-08
     skills:
       - python
       - java
@@ -119,14 +119,14 @@ experiences:
       - django
       - oracle
 
-  # - title: Software Engineer I
-  #   company: Emerson
-  #   department: Workforce Productivity (IT)
-  #   type: Full-Time
-  #   location: Boulder, CO
-  #   start: 2026-07-01
-  #   end: 9999-01-01
-  #   starred: true
+  - title: Software Engineer I
+    company: Emerson
+    department: Workforce Productivity (IT)
+    type: Full-Time
+    location: Boulder, CO
+    start: 2026-06-29
+    end: 2050-01-01
+    starred: true
 
 awards:
   - name: Helpful Hacker & Mutant Coding Machine

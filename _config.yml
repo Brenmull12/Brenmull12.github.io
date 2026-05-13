@@ -6,3 +6,8 @@ description: >-
 domain: brenmull12.github.io
 url: "https://brenmull12.github.io/"
 baseurl: ""
+
+exclude:
+  - .bundle
+  - bundle
+  - .vscode
