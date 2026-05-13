@@ -2,10 +2,12 @@
 layout: default
 ---
 <hgroup id="overview" class="mb-3">
-  <h1>{{ site.data['curriculum-vitae'].name }}</h1>
-  {% if site.data['curriculum-vitae'].title %}
-    <p class="fs-3">{{ site.data['curriculum-vitae'].title }}</p>
-  {% endif %}
+  <h1>Curriculum Vitae</h1>
+  <p class="fs-3">
+    {{ site.data['curriculum-vitae'].name -}}
+    {%- if site.data['curriculum-vitae'].title %}, {{ site.data['curriculum-vitae'].title }}{% endif %}
+  </p>
+
   {% if site.data['curriculum-vitae'].summary %}
     <p>{{ site.data['curriculum-vitae'].summary }}</p>
   {% endif %}
